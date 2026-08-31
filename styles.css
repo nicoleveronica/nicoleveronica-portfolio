@@ -147,8 +147,8 @@ section { position: relative; overflow: hidden; }
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: clamp(40px, 9vw, 110px);
-  height: clamp(138px, 23vw, 305px);
+  top: calc(clamp(40px, 9vw, 110px) - (clamp(138px, 23vw, 305px) * 0.155));
+  height: calc(clamp(138px, 23vw, 305px) * 1.155);
   width: auto;
   z-index: 3;
   filter: drop-shadow(0 20px 26px rgba(33,30,25,0.3));
@@ -417,7 +417,10 @@ section { position: relative; overflow: hidden; }
   .hero-role { text-align: left; }
   .nav a { margin-left: 16px; }
   .hero-stage { padding-bottom: 0; }
-  .hero-photo { height: clamp(126px, 38vw, 201px); }
+  .hero-photo {
+    top: calc(clamp(40px, 9vw, 110px) - (clamp(126px, 38vw, 201px) * 0.155));
+    height: calc(clamp(126px, 38vw, 201px) * 1.155);
+  }
   .hero-mark-1 { display: none; }
   .face { display: none; }
 }
