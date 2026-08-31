@@ -80,23 +80,28 @@ section { position: relative; overflow: hidden; }
 .nav-links { display: flex; align-items: center; }
 
 /* ---------- HERO ---------- */
-.hero { background: var(--cream); padding: 20px 0 90px; }
+.hero { background: var(--cream); padding: 20px 0 0; }
 .hero-stage {
   position: relative;
-  margin-bottom: clamp(150px, 20vw, 260px);
+  margin-bottom: 0;
+  padding-bottom: clamp(120px, 15vw, 220px);
 }
 .hero-title-row {
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: clamp(10px, 3vw, 26px);
   flex-wrap: wrap;
 }
 .face {
-  width: clamp(56px, 9vw, 118px);
-  height: clamp(56px, 9vw, 118px);
-  flex-shrink: 0;
+  position: absolute;
+  top: -6px;
+  left: clamp(0px, 2vw, 16px);
+  width: clamp(48px, 7vw, 90px);
+  height: clamp(48px, 7vw, 90px);
+  z-index: 1;
 }
 .pupil { transition: transform 0.05s linear; }
 .hero-top {
@@ -108,7 +113,7 @@ section { position: relative; overflow: hidden; }
 }
 .hero-title {
   font-family: var(--font-hero);
-  font-size: clamp(56px, 11vw, 130px);
+  font-size: clamp(80px, 19vw, 230px);
   line-height: 0.95;
   color: var(--brick);
   margin: 0;
@@ -131,14 +136,19 @@ section { position: relative; overflow: hidden; }
   z-index: 1;
 }
 .hero-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: flex-end;
 }
 .hero-photo {
   position: absolute;
-  left: clamp(70px, 15vw, 200px);
-  top: clamp(4px, 1vw, 14px);
-  height: clamp(150px, 26vw, 340px);
+  left: 50%;
+  transform: translateX(-50%);
+  top: clamp(6px, 1vw, 16px);
+  height: clamp(190px, 32vw, 420px);
   width: auto;
   z-index: 3;
   filter: drop-shadow(0 20px 26px rgba(33,30,25,0.3));
@@ -397,10 +407,19 @@ section { position: relative; overflow: hidden; }
   .work-item:first-child { flex-direction: column; }
   .work-item:first-child .work-thumb { width: 100%; height: 170px; }
   .work-item:last-child { transform: none; }
-  .hero-bottom { flex-direction: column; align-items: flex-start; }
+  .hero-bottom {
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: clamp(150px, 44vw, 220px);
+  }
   .hero-role { text-align: left; }
   .nav a { margin-left: 16px; }
-  .hero-photo { left: 12%; height: clamp(140px, 42vw, 220px); }
+  .hero-stage { padding-bottom: 0; }
+  .hero-photo { height: clamp(170px, 52vw, 270px); }
+  .hero-mark-1 { display: none; }
+  .face { display: none; }
 }
 
 /* Reduced motion */
