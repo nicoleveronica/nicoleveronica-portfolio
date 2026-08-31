@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Product &amp; Visual Designer</title>
+<meta name="description" content="Portfolio of Alex Rivera, product and visual designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wght@500;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="name">ALEX RIVERA</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <span>Alex Rivera</span>
+      <span>@alexrivera.design</span>
+    </div>
+    <div class="hero-title-row">
+      <h1 class="hero-title">Portfolio</h1>
+      <div class="face" aria-hidden="true">
+        <svg viewBox="0 0 160 160" width="100%" height="100%">
+          <circle cx="80" cy="80" r="76" fill="var(--brick)"></circle>
+          <g class="eye">
+            <circle cx="55" cy="78" r="22" fill="#FDFCF9"></circle>
+            <circle class="pupil" cx="55" cy="78" r="9" fill="var(--ink)"></circle>
+          </g>
+          <g class="eye">
+            <circle cx="107" cy="78" r="22" fill="#FDFCF9"></circle>
+            <circle class="pupil" cx="107" cy="78" r="9" fill="var(--ink)"></circle>
+          </g>
+          <path d="M52 118 Q80 138 110 118" stroke="var(--ink)" stroke-width="6" fill="none" stroke-linecap="round"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-photo" role="img" aria-label="Placeholder photo of Alex Rivera"></div>
+      <div class="hero-role">
+        Product &amp; visual designer<br>
+        Based in Singapore
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="section-num">02</span>
+      <span class="mark">✳</span>
+    </div>
+    <h2 class="about-title">Personal overview</h2>
+    <div class="about-grid">
+      <div>
+        <p class="about-voice">"Good design disappears. What's left is the feeling that everything is exactly where it should be."</p>
+        <p class="about-body">Placeholder bio — swap this for your own story. A couple of sentences on what you design, how you think, and what you care about when you're working with clients or teams.</p>
+      </div>
+      <div class="about-collage">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="section-num">03</span>
+    </div>
+    <h2 class="skills-title">Individual competencies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Product design</h3>
+        <p>Wireframes, flows, and interface systems that hold up at scale.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Brand &amp; identity</h3>
+        <p>Logos, type systems, and visual languages with a clear point of view.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Front-end craft</h3>
+        <p>Design that ships — comfortable in HTML, CSS, and component libraries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="section-num">04</span>
+    </div>
+    <h2 class="work-title">Selected work</h2>
+    <div class="work-list">
+      <a class="work-item" href="#">
+        <div class="work-thumb"></div>
+        <div class="work-info">
+          <h3>Project one</h3>
+          <div class="work-tags"><span>Product design</span><span>2025</span></div>
+        </div>
+        <span class="work-arrow">→</span>
+      </a>
+      <a class="work-item" href="#">
+        <div class="work-thumb"></div>
+        <div class="work-info">
+          <h3>Project two</h3>
+          <div class="work-tags"><span>Branding</span><span>2024</span></div>
+        </div>
+        <span class="work-arrow">→</span>
+      </a>
+      <a class="work-item" href="#">
+        <div class="work-thumb"></div>
+        <div class="work-info">
+          <h3>Project three</h3>
+          <div class="work-tags"><span>Web design</span><span>2024</span></div>
+        </div>
+        <span class="work-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="section-num">05</span>
+    </div>
+    <h2 class="contact-title">Let's work together</h2>
+    <p class="contact-sub">Placeholder intro line — invite people to reach out about a project, collaboration, or just to say hi.</p>
+    <a class="contact-email" href="mailto:hello@alexrivera.design">hello@alexrivera.design</a>
+    <div class="contact-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">Resume</a>
+    </div>
+    <p class="footer-note">© 2026 Alex Rivera</p>
+  </div>
+</section>
+
+<script>
+(function () {
+  var eyes = document.querySelectorAll(".eye");
+  if (!eyes.length) return;
+
+  var maxPupilOffset = 8;
+
+  function movePupils(clientX, clientY) {
+    eyes.forEach(function (eye) {
+      var pupil = eye.querySelector(".pupil");
+      var rect = eye.getBoundingClientRect();
+      var cx = rect.left + rect.width / 2;
+      var cy = rect.top + rect.height / 2;
+      var dx = clientX - cx;
+      var dy = clientY - cy;
+      var angle = Math.atan2(dy, dx);
+      var distance = Math.min(maxPupilOffset, Math.hypot(dx, dy) / 8);
+      var px = Math.cos(angle) * distance;
+      var py = Math.sin(angle) * distance;
+      pupil.setAttribute("transform", "translate(" + px.toFixed(1) + " " + py.toFixed(1) + ")");
+    });
+  }
+
+  document.addEventListener("mousemove", function (e) {
+    movePupils(e.clientX, e.clientY);
+  });
+
+  document.addEventListener("touchmove", function (e) {
+    if (e.touches && e.touches[0]) {
+      movePupils(e.touches[0].clientX, e.touches[0].clientY);
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
