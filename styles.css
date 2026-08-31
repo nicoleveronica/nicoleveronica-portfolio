@@ -84,7 +84,7 @@ section { position: relative; overflow: hidden; }
 .hero-stage {
   position: relative;
   margin-bottom: 0;
-  padding-bottom: clamp(120px, 15vw, 220px);
+  padding-bottom: calc(clamp(40px, 9vw, 110px) + clamp(138px, 23vw, 305px) - (clamp(80px, 19vw, 230px) * 0.95));
 }
 .hero-title-row {
   position: relative;
@@ -147,8 +147,8 @@ section { position: relative; overflow: hidden; }
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: clamp(6px, 1vw, 16px);
-  height: clamp(190px, 32vw, 420px);
+  top: clamp(40px, 9vw, 110px);
+  height: clamp(138px, 23vw, 305px);
   width: auto;
   z-index: 3;
   filter: drop-shadow(0 20px 26px rgba(33,30,25,0.3));
@@ -412,12 +412,12 @@ section { position: relative; overflow: hidden; }
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: clamp(150px, 44vw, 220px);
+    margin-top: calc(clamp(40px, 9vw, 110px) + clamp(126px, 38vw, 201px) - (clamp(80px, 19vw, 230px) * 0.95));
   }
   .hero-role { text-align: left; }
   .nav a { margin-left: 16px; }
   .hero-stage { padding-bottom: 0; }
-  .hero-photo { height: clamp(170px, 52vw, 270px); }
+  .hero-photo { height: clamp(126px, 38vw, 201px); }
   .hero-mark-1 { display: none; }
   .face { display: none; }
 }
