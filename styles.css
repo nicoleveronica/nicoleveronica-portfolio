@@ -410,6 +410,9 @@ section { position: relative; overflow: hidden; }
   .hero-bottom { flex-direction: column; align-items: flex-start; }
   .hero-role { text-align: left; }
   .nav a { margin-left: 16px; }
+  .hero-stage { margin-bottom: 56px; }
+  .hero-photo { left: 42%; bottom: -18px; width: 40px; height: 56px; border-radius: 10px; }
+  .hero-mark-2 { left: 2px; bottom: -14px; }
 }
 
 /* Reduced motion */
