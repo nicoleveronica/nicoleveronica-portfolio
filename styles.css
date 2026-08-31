@@ -21,7 +21,7 @@
   --mono-900: #35322C;
   --white: #FDFCF9;
   --font-hero: "New Sun", "Bagel Fat One", "Fredoka", sans-serif;
-  --font-display: "Fredoka", "Arial Rounded MT Bold", sans-serif;
+  --font-display: "New Sun", "Bagel Fat One", "Fredoka", "Arial Rounded MT Bold", sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-voice: Georgia, "Times New Roman", serif;
   --max: 1120px;
