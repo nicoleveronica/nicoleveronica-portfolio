@@ -108,7 +108,7 @@ section { position: relative; overflow: hidden; }
   display: flex;
   justify-content: space-between;
   font-size: 13px;
-  color: var(--ink-soft);
+  color: var(--brick);
   margin-bottom: 36px;
 }
 .hero-title {
@@ -139,7 +139,7 @@ section { position: relative; overflow: hidden; }
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: clamp(16px, 3vw, 28px);
   display: flex;
   justify-content: flex-end;
 }
@@ -155,7 +155,7 @@ section { position: relative; overflow: hidden; }
 }
 .hero-role {
   font-size: 14px;
-  color: var(--ink-soft);
+  color: var(--brick);
   text-align: right;
 }
 
@@ -413,6 +413,7 @@ section { position: relative; overflow: hidden; }
     align-items: flex-start;
     justify-content: flex-start;
     margin-top: calc(clamp(40px, 9vw, 110px) + clamp(126px, 38vw, 201px) - (clamp(80px, 19vw, 230px) * 0.95));
+    margin-bottom: clamp(16px, 4vw, 28px);
   }
   .hero-role { text-align: left; }
   .nav a { margin-left: 16px; }
